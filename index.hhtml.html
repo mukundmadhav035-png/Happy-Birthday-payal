@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Payal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts-container" id="hearts"></div>
+
+    <div class="card">
+        <h1>Happy Birthday Payal 🎂</h1>
+
+        <!-- Photo Slideshow -->
+        <div class="slideshow">
+            <img class="slide active" src="photo1.jpg"alt="Photo 1">
+            <img class="slide" src="photo2.jpg" alt="Photo 2">
+            <img class="slide" src="photo3.jpg" alt="Photo 3">
+        </div>
+
+        <button class="btn" onclick="openLetter()">Open Birthday Letter 💌</button>
+
+        <!-- Hidden Letter Section -->
+        <div id="letter" class="letter-modal hidden">
+            <div class="letter-content">
+                <h2>Dear Payal, 🎉</h2>
+                <p>Wishing you a day filled with love, laughter, and all your favorite things. May this year bring you endless joy and great success!</p>
+                <div class="cake-container">
+                    <span class="cake">🎂✨🎉</span>
+                </div>
+                <p class="signature">With Warm Wishes,<br><strong>Mukund Madhav</strong></p>
+                <button class="close-btn" onclick="closeLetter()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
